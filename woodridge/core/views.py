@@ -10,10 +10,7 @@ def about(request):
 
 def gallery(request):
     return render(request, 'core/gallery.html')
-
-def news(request):
-    return render(request, 'core/news.html')
-
+    
 def admissions(request):
     return render(request, 'core/admissions.html')
 
