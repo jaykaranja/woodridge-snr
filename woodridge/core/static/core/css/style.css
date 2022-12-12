@@ -1,4 +1,8 @@
 /********** Template CSS **********/
+
+html {
+    zoom: .8;
+}
 :root {
     --primary: rgb(31, 25, 201);
     --secondary: #F6F6F6;

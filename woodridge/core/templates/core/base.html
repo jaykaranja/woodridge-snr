@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{% endblock title %}</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=2.0" name="viewport">
 
     <!-- Favicon -->
     <link href="{% static 'core/images/logo.jpg' %}" rel="icon">
@@ -58,7 +58,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
+        <a href="{% url 'core:home' %}" class="navbar-brand p-0">
             <img src="{% static 'core/images/logo.jpg' %}" id="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -67,20 +67,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 me-n3">
                 <a href="{% url 'core:home' %}" class="nav-item nav-link">Home</a>
-                <a href="{% url 'core:about-us' %}" class="nav-item nav-link">About</a>
+                <a href="{% url 'core:about-us' %}" class="nav-item nav-link">About Us</a>
                 <a href="{% url 'core:gallery' %}" class="nav-item nav-link">Gallery</a>
-                <a href="{% url 'core:news' %}" class="nav-item nav-link">News</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Newsletters</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item">Quote Form</a>
-                        <a href="team.html" class="dropdown-item">The Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div>
+                <a href="#footer" class="nav-item nav-link">Contact Us</a>
                 <a href="{% url 'core:admissions' %}" class="nav-item nav-link">Admissions</a>
                 <a href="{% url 'core:enquiries' %}" class="nav-item nav-link">Enquiries</a>
             </div>
@@ -89,6 +78,7 @@
     <!-- Navbar End -->
     {% block content %}{% endblock content %}
     <!-- Footer Start -->
+    <section id="footer">
     <div class="container-fluid text-secondary p-5" id="mainbg">
         <div class="row g-5">
             <div class="col-12 text-center">
@@ -111,7 +101,6 @@
                     <a class="text-secondary mb-2" href="{% url 'core:home' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
                     <a class="text-secondary mb-2" href="{% url 'core:about-us' %}"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                     <a class="text-secondary mb-2" href="{% url 'core:gallery' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
-                    <a class="text-secondary mb-2" href="{% url 'core:news' %}"><i class="bi bi-arrow-right text-primary me-2"></i>News</a>
                     <a class="text-secondary mb-2" href="{% url 'core:admissions' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Admissions</a>
                     <a class="text-secondary mb-2" href="{% url 'core:enquiries' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Enquiries</a>
                 </div>
@@ -136,6 +125,7 @@
     <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Woodridge Senior Girls High School</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="">Realm Tech</a></p>
     </div>
+</section>
     <!-- Footer End -->
 
 
