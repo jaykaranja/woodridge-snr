@@ -5,26 +5,34 @@
 <!-- Quote Start -->
 <div class="container-fluid bg-secondary px-0">
     <div class="row g-0">
+        {% if message %}
+        <div class="text-center" id="message" style="display: block">
+            <div class="alert alert-{{ messagetype }}" role="alert">
+                {{ message }}
+            </div>
+        </div>
+        {% endif %}
         <div class="col-lg-6 py-6 px-5">
             <h1 class="display-5 mb-4">Enquiries</h1>
             <p class="mb-4">Do you have any queries that you need from us? Enter the details in the form below and we will review your query and get back to you as soon as possible. </p>
-            <form>
+            <form method="POST">
+                {% csrf_token %}
                 <div class="row gx-3">
                     <div class="col-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
+                            <input type="text" class="form-control" name="names" id="form-floating-1" required>
                             <label for="form-floating-1">Full Names</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                            <input type="number" class="form-control" name="phonenumber" id="form-floating-2" placeholder="name@example.com">
                             <label for="form-floating-2">Phone Number</label>
                         </div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating mb-4">
-                        <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                        <input type="text" class="form-control" name="query" id="form-floating-2" placeholder="name@example.com">
                         <label for="form-floating-2">Submit your query here</label>
                     </div>
                     </div>

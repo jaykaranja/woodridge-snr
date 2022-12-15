@@ -11,6 +11,4 @@ urlpatterns = [
     path('admissions', views.admissions, name='admissions'),
     path('enquiries', views.enquiries, name='enquiries'),
 
-
-
 ]

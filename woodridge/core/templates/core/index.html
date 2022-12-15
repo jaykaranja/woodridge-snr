@@ -5,6 +5,13 @@
 <!-- Carousel Start -->
 <div class="container-fluid p-0">
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        {% if message %}
+        <div class="text-center" id="message" style="display: block">
+            <div class="alert alert-{{ messagetype }}" role="alert">
+                {{ message }}
+            </div>
+        </div>
+        {% endif %}
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="w-100" src="{% static 'core/images/image10.jpg' %}" alt="Image">
@@ -188,7 +195,7 @@
           </div>
       </div>
       <div class="col-lg-4">
-          <div class="d-block h-100 text-center">
+          <div class="d-block h-100">
               <img src="{% static 'core/images/banner.jpg' %}" style="height: 650px;">
           </div>
       </div>
@@ -228,23 +235,24 @@
       <div class="col-lg-6 py-6 px-5">
           <h1 class="display-5 mb-4">Request A Tour</h1>
           <p class="mb-4">Bring your child to spend an entire day in our preschool. Let them enjoy the rich Makini experience from interacting with the learners & teachers, play activities, the amazing facilities and enjoy the healthy and delicious menu. We will reach out to you as soon as possible and plan for a tour.</p>
-          <form>
+          <form method="POST">
+              {% csrf_token %}
               <div class="row gx-3">
                   <div class="col-6">
                       <div class="form-floating">
-                          <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
+                          <input type="text" class="form-control" name="fullname" id="form-floating-1"required>
                           <label for="form-floating-1">Full Names</label>
                       </div>
                   </div>
                   <div class="col-6">
                       <div class="form-floating mb-3">
-                          <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                          <input type="number" class="form-control" name="phonenumber" id="form-floating-2" required>
                           <label for="form-floating-2">Phone Number</label>
                       </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                      <input type="text" class="form-control" name="studentname" id="form-floating-2" required>
                       <label for="form-floating-2">Student's Name</label>
                   </div>
                   </div>
