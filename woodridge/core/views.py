@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import TourRequests, Enquiries, Applications
+from .models import TourRequests, Enquiries, Applications, ParentEmails
 
 # Create your views here.
 
@@ -18,6 +18,20 @@ def index(request):
         return render(request, 'core/index.html', context)
 
     return render(request, 'core/index.html')
+
+def emailupdates(request):
+    rq = ParentEmails.objects.create()
+    rq.email = request.POST['email']
+    rq.save()
+    context = {
+        'messagetype' : 'success',
+        'message' : 'Your email has been received. We will be sending emails concerning news from Woodridge.'
+    }
+
+    return render(request, 'core/index.html', context)
+
+
+
 
 def about(request):
     return render(request, 'core/about-us.html')

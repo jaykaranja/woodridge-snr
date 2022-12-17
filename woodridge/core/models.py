@@ -2,6 +2,14 @@ from django.db import models
 
 # Create your models here.
 
+class ParentEmails(models.Model):
+    email = models.EmailField(max_length=50)
+
+    def __str__(self):
+        return self.email
+
+    class Meta:
+        verbose_name_plural = "Parent emails"
 
 class TourRequests(models.Model):
     full_names = models.CharField(max_length=50)
