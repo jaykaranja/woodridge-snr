@@ -1,3 +1,5 @@
 # woodridge-snr
 
-Hosted [here][https://woodridge.pythonanywhere.com]
+Hosted [here]
+
+[here] : https://woodridge.pythonanywhere.com
