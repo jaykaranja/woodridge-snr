@@ -19,20 +19,20 @@
                 {% csrf_token %}
                 <div class="row gx-3">
                     <div class="col-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" name="names" id="form-floating-1" required>
-                            <label for="form-floating-1">Full Names</label>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="names" id="form-floating-2" placeholder="name@example.com" required>
+                            <label for="form-floating-2">Full Names</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating mb-3">
-                            <input type="number" class="form-control" name="phonenumber" id="form-floating-2" placeholder="name@example.com">
+                            <input type="number" class="form-control" name="phonenumber" id="form-floating-2" placeholder="name@example.com" required>
                             <label for="form-floating-2">Phone Number</label>
                         </div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating mb-4">
-                        <input type="text" class="form-control" name="query" id="form-floating-2" placeholder="name@example.com">
+                        <input type="text" class="form-control" name="query" id="form-floating-2" placeholder="name@example.com" required>
                         <label for="form-floating-2">Submit your query here</label>
                     </div>
                     </div>

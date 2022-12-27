@@ -1,4 +1,5 @@
 {% extends 'core/base.html' %}
+{% load static %}
 {% block title %}About Us | Woodridge Senior Girls High School{% endblock title %}
 {% block content %}
 <!-- About Start -->
@@ -54,17 +55,17 @@
     <div class="row g-5">
         <div class="col-lg-4 col-md-6">
             <div class="service-item bg-secondary text-center px-5">
-                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;" id="mainbg">
-                    <i class="fa fa-user-tie fa-2x"></i>
+                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fa fa-user-tie fa-2x" id="maroon-color"></i>
                 </div>
-                <h3 class="mb-3">Good Performance</h3>
+                <h3 class="mb-3">Excellent Performance</h3>
                 <p class="mb-0">By our way of doing things, your student is set on an upward trend on their performance.</p>
             </div>
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="service-item bg-secondary text-center px-5">
-                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;" id="mainbg">
-                    <i class="fa fa-chart-pie fa-2x"></i>
+                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fa fa-chart-pie fa-2x" id="blue-color"></i>
                 </div>
                 <h3 class="mb-3">Extracurricular Skills</h3>
                 <p class="mb-0">At Woodridge, we embrace extra-curriculum activities and have lots of tools to ensure that our students can put their skills into test.</p>
@@ -72,8 +73,8 @@
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="service-item bg-secondary text-center px-5">
-                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;" id="mainbg">
-                    <i class="fa fa-chart-line fa-2x"></i>
+                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fa fa-chart-line fa-2x" id="maroon-color"></i>
                 </div>
                 <h3 class="mb-3">Ready for Work</h3>
                 <p class="mb-0">Our students get to learn the importance of hard work and the fruits of this important key to success.</p>
@@ -81,8 +82,8 @@
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="service-item bg-secondary text-center px-5">
-                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;" id="mainbg">
-                    <i class="fa fa-chart-area fa-2x"></i>
+                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fa fa-chart-area fa-2x" id="maroon-color"></i>
                 </div>
                 <h3 class="mb-3">Confidence</h3>
                 <p class="mb-0">Our students are taught to be confident in their own ideas and how to stand for themselves.</p>
@@ -90,8 +91,8 @@
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="service-item bg-secondary text-center px-5">
-                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;" id="mainbg">
-                    <i class="fa fa-balance-scale fa-2x"></i>
+                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fa fa-balance-scale fa-2x" id="blue-color"></i>
                 </div>
                 <h3 class="mb-3">Warm Relationships</h3>
                 <p class="mb-0">At Woodridge, we always ensure we maintain a good and warm relationship with our students so as to ensure smoothness in the running of the school.</p>
@@ -99,8 +100,8 @@
         </div>
         <div class="col-lg-4 col-md-6">
             <div class="service-item bg-secondary text-center px-5">
-                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;" id="mainbg">
-                    <i class="fa fa-house-damage fa-2x"></i>
+                <div class="d-flex align-items-center justify-content-center text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                    <i class="fa fa-house-damage fa-2x" id="maroon-color"></i>
                 </div>
                 <h3 class="mb-3">Succcessful Future</h3>
                 <p class="mb-0">the skills that out learners develop prepare them for a successful transition towards their careers.</p>
@@ -109,4 +110,71 @@
     </div>
 </div>
 <!-- Services End -->
+
+<!-- Our Promise Start -->
+<div class="container-fluid py-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 mb-0">Our Promise</h1>
+        <hr class="w-25 mx-auto bg-primary">
+    </div>
+    <div class="row g-5">
+        <div class="col-lg-4">
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" id="mainbg">
+                        <i class="fa fa-cubes fs-4 text-white"></i>
+                    </div>
+                    <h3>Confident Individuals</h3>
+                    <p class="mb-0">With our ways, your daughter gets to attain a level of confidence that makes her stand out.</p>
+                </div>
+                <div class="col-12">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" id="maroon-bg">
+                        <i class="fa fa-percent fs-4 text-white"></i>
+                    </div>
+                    <h3>Continous Improvement</h3>
+                    <p class="mb-0">Every student matters, and we always believe that with continous improvement, each and every student has to excel.</p>
+                </div>
+                <div class="col-12">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" id="mainbg">
+                        <i class="fa fa-award fs-4 text-white"></i>
+                    </div>
+                    <h3>Responsible Citizens</h3>
+                    <p class="mb-0">We always strive to produce highly responsible students so they can perform future tasks with brilliance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="d-block h-100">
+                <img src="{% static 'core/images/banner.jpg' %}" style="height: 650px;">
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row g-5">
+                <div class="col-12">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" id="mainbg">
+                        <i class="far fa-smile-beam fs-4 text-white"></i>
+                    </div>
+                    <h3>Maximum Potential</h3>
+                    <p class="mb-0">Here at Woodridge, one of our main goals is to maximize the potential of our students.</p>
+                </div>
+                <div class="col-12">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" id="maroon-bg">
+                        <i class="fa fa-user-tie fs-4 text-white"></i>
+                    </div>
+                    <h3>Professional Educators</h3>
+                    <p class="mb-0">With our very professional staff, you can be guaranteed 100% good governance for your daughter.</p>
+                </div>
+                <div class="col-12">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;" id="mainbg">
+                        <i class="fa fa-cubes fs-4 text-white"></i>
+                    </div>
+                    <h3>Social Responsibility</h3>
+                    <p class="mb-0">We emphasize on the importance of social responsibility, which makes our students more responsible citizens.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Our Promise Start -->
+  
 {% endblock content %}  
