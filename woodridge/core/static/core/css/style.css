@@ -11,11 +11,18 @@ html {
 }
 
 .btn-primary {
-    background-color: rgb(31, 25, 201);
+    background-color: #9b1c1a;
     border-style: none;
 }
 
 
+#maroon-color {
+    color: #800000;
+}
+
+#maroon-bg {
+    background-color: #800000;
+}
 
 #blue-color {
     color: rgb(31, 25, 201);
